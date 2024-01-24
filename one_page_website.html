@@ -3,101 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My One Page Website</title>
+    <title>One Page Website</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
+        /* Basic CSS for styling */
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        .container { width: 80%; margin: auto; overflow: hidden; }
+        nav { background: #333; color: #fff; padding: 10px 0; text-align: center; }
+        nav a { color: #fff; text-decoration: none; padding: 10px 20px; }
+        nav a:hover { background: #444; }
+        header, footer { background: #333; color: #fff; padding: 20px 0; text-align: center; }
+        .content-section { margin: 20px 0; }
+        .footer-section { font-size: 0.8em; }
+        iframe { width: 100%; height: 315px; }
     </style>
 </head>
 <body>
-
-    <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#video">Video</a></li>
-        </ul>
+        <a href="#home">Home</a>
+        <a href="#pictures">Pictures</a>
+        <a href="#contact">Contact</a>
+        <a href="#video">Video</a>
+        <a href="#footer">Footer</a>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h1>Welcome to My Website</h1>
-        <p>This is a basic one-page website created as a part of a web development program.</p>
-    </section>
+    <header id="home">
+        <div class="container">
+            <h1>Welcome to Our One Page Website</h1>
+            <p>This is the home section of our simple one-page website.</p>
+        </div>
+    </header>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <!-- Images can be added here with <img> tags -->
-    </section>
+    <div class="content-section container" id="pictures">
+        <h2>Pictures</h2>
+        <img src="image1.jpeg" alt="Placeholder Image">
+        <img src="image2.jpeg" alt="Placeholder Image">
+    </div>
 
-    <!-- Contact Form Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br><br><br><br>
-            <input type="submit" value="Submit">
+    <div class="content-section container" id="contact">
+        <h2>Contact Form</h2>
+        <form>
+            <input type="text" placeholder="Name" name="name" required><br>
+            <input type="email" placeholder="Email" name="email" required><br>
+            <textarea placeholder="Message" name="message" required></textarea><br>
+            <button type="submit">Send</button>
         </form>
-    </section>
+    </div>
 
-    <!-- Video Section -->
-    <section id="video">
-        <h2>Our Video</h2>
-        <!-- Video iframe can be inserted here -->
-    </section>
+    <div class="content-section container" id="video">
+        <h2>Video Section</h2>
+        <iframe src="video.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 My One Page Website</p>
+    <footer class="footer-section" id="footer">
+        <div class="container">
+            <p>&copy; 2024 One Page Website</p>
+        </div>
     </footer>
-
-    <script>
-        // JavaScript can be added here for additional functionality
-    </script>
-
 </body>
 </html>
