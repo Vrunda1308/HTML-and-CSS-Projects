@@ -6,7 +6,7 @@ h1 {
     text-transform: uppercase; 
     font-family: "Trebuchet MS", Optima; 
     text-align: center; 
-    margin-top: 3%; 
+    margin-top: 2%; 
     color: #1a1a1a; 
 }
 
@@ -206,4 +206,5 @@ input[type=text] {
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
-    margin-bottom
+    margin-bottom:auto;
+}
